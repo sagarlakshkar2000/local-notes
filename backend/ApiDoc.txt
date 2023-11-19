@@ -1,0 +1,54 @@
+
+base Route : http://localhost:4000
+
+
+base url for Auth User 
+http://localhost:4000/api/auth
+
+=> fetchuser :get
+http://localhost:4000/api/auth/fetchuser 
+
+=>create users :post
+http://localhost:4000/api/auth/users
+
+=> Existing User Login Api : post ,Require Params : email ,password
+http://localhost:4000/api/auth/users/users/login
+[
+    1: "if User Email is Inncorrect then it shoul be show proper error message "
+]
+
+
+
+=>Login Existing User Api 
+http://localhost:4000/api/auth/getuser
+
+------------------------------------------------------------------------------------------------------
+
+{
+    "name" : "sagar",
+    "email":"sagarlakshkar23@gmail.com",
+    "password":"sagar",
+
+    "authToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7fSwiaWF0IjoxNjc5ODc2MjE0fQ.zyhEbIbEeNeoz5ZmCAqdYuvCyudTfHwvhin8SDgLXto"
+}
+ 
+
+------------------------------------------------------------------------------------------------------
+base url for User's Notes
+http://localhost:4000/api/notes
+
+=>  Get All Notes 
+http://localhost:4000/api/notes/fetchallnotes
+[
+    1 : "if user Auth is correct it will show all notes of all users "
+]
+
+=>create notes
+http://localhost:4000/api/notes/addnotes
+
+=> Update notes Api 
+http://localhost:4000/api/notes/updatenotes/:id
+
+
+
+
